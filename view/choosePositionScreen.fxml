@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ChoosePositionScreenController">
+   <children>
+      <ImageView fitHeight="468.0" fitWidth="624.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo_tela_iniciar.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choosePositionChoiceBox" layoutX="60.0" layoutY="173.0" prefHeight="31.0" prefWidth="447.0" />
+      <Label fx:id="chooseStatusLabel" alignment="CENTER" layoutX="133.0" layoutY="304.0" prefHeight="31.0" prefWidth="358.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <ImageView fx:id="startButton" fitHeight="149.0" fitWidth="149.0" layoutX="238.0" layoutY="319.0" onMouseClicked="#startTrack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/botao_iniciar.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="chooseMethodChoiceBox" layoutX="60.0" layoutY="264.0" prefHeight="31.0" prefWidth="447.0" />
+   </children>
+</AnchorPane>

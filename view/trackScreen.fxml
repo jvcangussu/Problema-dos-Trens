@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.TrackScreenController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="832.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="train1" fitHeight="242.0" fitWidth="100.0" layoutX="292.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/trem1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="train2" fitHeight="242.0" fitWidth="100.0" layoutX="449.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/trem2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resetButton" fitHeight="76.0" fitWidth="76.0" layoutX="712.0" layoutY="20.0" onMouseClicked="#resetTrains" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/botao_resetar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="327.0" fitWidth="169.0" layoutX="63.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/controle_velocidade1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="327.0" fitWidth="169.0" layoutX="600.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/controle_velocidade2.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="train1SpeedSlider" layoutX="135.0" layoutY="326.0" orientation="VERTICAL" prefHeight="147.0" prefWidth="20.0" style="-fx-background-radius: 15; -fx-border-color: #000000; -fx-border-radius: 15; -fx-background-color: #99e6fc;" value="20.0" />
+      <Slider fx:id="train2SpeedSlider" layoutX="672.0" layoutY="326.0" orientation="VERTICAL" prefHeight="147.0" prefWidth="20.0" style="-fx-background-radius: 15; -fx-border-color: #000000; -fx-border-radius: 15; -fx-background-color: #99e6fc;" value="20.0" />
+   </children>
+</AnchorPane>
